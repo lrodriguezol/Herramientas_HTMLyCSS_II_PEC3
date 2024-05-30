@@ -1,5 +1,8 @@
 @layer components {
-  /* Definición de clases personalizadas usando @apply */
+  
+  .container-base {
+    @apply mx-auto rounded-lg;
+  }
 
   .text-title {
     @apply text-4xl font-bold text-center mb-4;
