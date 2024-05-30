@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+  <title>Concurso de Cocina - Participantes</title>
+</head>
+<body class="bg-concurso-background text-concurso-corporate min-h-screen m-0 p-0 font-sans flex flex-col">
+   <!-- Componente Cabecera -->
+  <include src="./views/cabecera.html"></include>
+  <div class="container mx-auto mt-16">
+    <h1 class="text-title">Participantes del Concurso</h1>
+     <!-- Componente Lista Participantes -->
+    <include src="./views/lista-participantes.html"></include>
+    <canvas class= "chart-participantes" id="participantesChart"></canvas>
+  </div>
+   <!-- Componente Footer -->
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script>
+</body>
+</html>

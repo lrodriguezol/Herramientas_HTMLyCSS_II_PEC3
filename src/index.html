@@ -1,27 +1,37 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <title>Concurso de Cocina</title>
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+  <body class="bg-concurso-background text-concurso-corporate min-h-screen m-0 p-0 font-sans flex flex-col">
+    <div>
+      <!-- Componente Cabecera -->
+      <include src="./views/cabecera.html"></include>
+      <div class="relative h-screen flex flex-col justify-center items-center">
+        <img class="absolute inset-0 w-full h-full object-cover z-[-1] opacity-70" src="./assets/images/portada.jpeg" alt="Imagen cartel concurso cocina">
+        <div class="absolute inset-0 flex flex-col justify-center items-center">
+            <h1 class="text-4xl font-bold text-center mb-4">CONCURSO DE COCINA</h1>
+            <p class="text-black p-4 text-center text-lg md:text-xl lg:text-2xl px-4 underline">El Concurso que otorga el merecido prestigio y el reconocimiento a los grandes profesionales de nuestra cocina. ¡No lo pienses! ¡Apúntate!</p>
+        </div>
+      </div>
+      <section class="text-center mt-8 p-8">
+          <p>Horario de apertura al público de nuestras instalaciones:</p>
+          <ul class="mt-4">
+            <li>De Lunes a Jueves:</li>
+            <li>Mañanas: 09:00 - 13:00 horas</li>
+            <li>Tardes: 16:00 - 20:30 horas</li>
+          </ul>
+          <ul class="mt-4">
+            <li>Sábados y Domingos:</li>
+            <li>Cerrado</li>
+          </ul>
+        </section>
     </div>
+    <!-- Componente Footer -->
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <script type="module" src="./assets/scripts/main.js"></script>
   </body>
 </html>
