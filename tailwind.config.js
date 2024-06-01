@@ -3,8 +3,6 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     screens: {
-      'tablet': '640px',
-      'laptop': '1024px',
       'sm': '390px',
       'md': '640px',
       'lg': '1024px',
@@ -28,13 +26,10 @@ module.exports = {
         '1/2': '50%',
         '5/6': '83.333333%',
         '1/4': '25%',
+        '10vh': '10vh',
       },
       opacity: {
         '70': '0.7',
-      },
-      spacing: {
-        '10vh': '10vh',
-        '10vh': '10vh',
       },
       width: {
         'footer-width': '90%', 
